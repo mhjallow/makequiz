@@ -1,11 +1,12 @@
 all:
-	make build
+	make doc
 	make doczip
+	make clean
+	make build
 
 clean:
 	-rm *.o
 	-rm *.class
-	-rm -r html
 	-rm a.out
 	-rm myexe
 
@@ -28,7 +29,7 @@ myexe: collegemain.o course.o college.o
 	g++ *.o -o myexe
 
 doczip:
-	tar czvf html
+	tar czvf -r html
 
 
 	
