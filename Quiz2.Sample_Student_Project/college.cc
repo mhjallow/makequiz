@@ -4,6 +4,12 @@
 //CS 2401
 //10/8/2015
 //********************
+
+/**
+* @file college.cc
+* @author Matthew Aberegg
+* @brief The implementation of the college class.
+*/
 #include "college.h"
 #include<cstdlib>
 #include<iostream>
@@ -16,6 +22,11 @@ College::College(std::string s){
 	head = NULL;
 }
 
+/**
+* @function ~College()
+* @author Matthew Aberegg
+* @brief The destructor for the college class, deletes the entire linked list.
+*/
 
 College::~College(){
 	node * rmptr;
@@ -68,7 +79,13 @@ College& College::operator =(const College& other){
 	}
 	return * this;
 }
-
+/**
+* @function add
+* @author Matthew Aberegg
+* @brief Adds a course to the list.
+* @param course& c
+* @return Void function; Does not return anything.
+*/
 void College::add(course& c){
 	node * previous;
 	node * cursor;
@@ -107,6 +124,13 @@ void College::add(course& c){
 	}
 }
 
+/**
+* @function remove
+* @author Matthew Aberegg
+* @brief Removes a course from the list.
+* @param std::string coursename
+* @return Void function; Does not return anything.
+*/
 void College::remove(std::string coursename){
 	node * previous;	
 	node * cursor;

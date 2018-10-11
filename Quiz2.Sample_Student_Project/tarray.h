@@ -7,6 +7,11 @@
 		Lab 7		Fall 2014
 	John Dolan			Ohio University 
 ********************************************************************/
+/**
+* @file tarray.h
+* @author John Dolan
+* @brief A template array class.
+*/
 
 #include<iostream>
 

@@ -4,6 +4,11 @@
 //CS 2401
 //10/8/2015
 //********************
+/**
+* @file college.h
+* @author Matthew Aberegg
+* @brief The header file for the college class.
+*/
 
 #include <iostream>
 #include <fstream>
